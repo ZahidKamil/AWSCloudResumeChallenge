@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Zahid Kamil</title>
+</head>
+<body>
+    <!-- NAVBaR DARK will have background dark with white text, fixed-top will show navbar when scrolling -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-2 fixed-top">
+        <div class="container container-lg">
+            <a href="#" class="navbar-brand">Zahid Kamil</a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Hiding/grouping navbar contents by a parent breakpoint, ms (margni start)-auto aligns to the right -->
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="#experience" class="nav-link scrollto">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#skills" class="nav-link">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#certifications" class="nav-link scrollto">Certifications</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#projects" class="nav-link">Work Projects</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Showcase -->
+    <!-- Alighning text to start of text after small breakpoint -->
+    <section class="bg-dark text-light p-5 text-center text-md-start">
+        <!-- Do not want section inside a container because you want the bg to extend to the edges -->
+        <div class="container">
+            <!-- using flewxbox to turn into a row after sm breakpoint, align-items-center (align vertically), justify-content-between (align horizontally)-->
+            <div class="d-sm-flex align-items-center p-3 justify-content-between">
+                <div>
+                    <h1>Hi, I am <span class="text-warning">Zahid Kamil</span></h1>
+                    <p class="lead my-4">
+                        I like learning new things and meeting new people. I am a Governance, Risk and Compliance Administrator and developer
+                    </p>
+                </div>
+                <!-- responsive with img-fluid, width 50%, d-none (display none), d-sm-block (display block after md) -->
+                <img class="img-fluid w-60 d-none d-md-block p-3" src="img/Picture2.png" alt="">
+            </div>
+        </div>
+    </section>
+    
+
+      
+    <div class="alert alert-success" role="alert">
+        
+        <div>
+            <h4 class="alert-heading text-center">Congratulations!</h4>
+            <p class="text-center count-number">Couldn't read counter</p>
+        </div>
+    </div>
+
+    <!-- newsletter -->
+    <!-- <section class="bg-primary text-light p-5">
+        <div class="container">
+            <div class="d-md-flex justify-content-between align-items-center">
+                <h3 class="mb-3 mb-md-0">Sign up for Our Newsletter</h3>
+
+                <div class="input-group news-input">
+                    <input type="text" class="form-control" placeholder="Enter Email" aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <button class="btn btn-dark btn-lg" type="button" id="button-addon2">Button</button>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <section class="p-5" id="experience">
+        <div class="container">
+            
+            <div class="row g-4">
+                <div class="col-md-12">
+                    <div class="row mb-3">
+                        <h2 class="text-center mb-3">Experience</h2>
+                    </div>
+                    <div class="p-3 box rounded border border-success text-light">
+                        <div class="row mb-3">
+                            <div class="col-md-8 text-start">
+                                <h3 class="mb-1 bold">GRC Administrator</h3>
+                                <h4 class="mb-1">State of Michigan</h4>
+                            </div>
+                            <div class="col-md-4 text-md-end text-start">
+                                <h5 class="mb-1">Aug 2023 -- Present</h5>
+                                <h5 class="mb-1">Lansing, MI</h5>
+                            </div>
+                        </div>
+                        <ul>
+                            <li>Spearheaded the implementation and versioning of Michigan's 
+                                GRC tool, serving as the primary liaison for client requirements 
+                                and system enhancements.
+                            </li>
+                            <li>
+                                Administered the State of Michigan's Security Accreditation process, aligning with NIST SP 800-53 standards, 
+                                and managed Request for Change (RFC) schedules for GRC tool updates.
+                            </li>
+                            <li>
+                                Employed Agile methodology with Azure Boards to drive new features, workflows, and updates for the State of Michigan GRC tool.
+                            </li>
+                            <li>  
+                                Developed Python API modules for data import, trained colleagues on Python and API integration, and set up an Azure Repos repository for API script management.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                    <!-- <div class="col-md-4">
+                        <div class="row mb-3">
+                            <h2 class="text-center mb-3">Skills</h2>
+                        </div>
+                        <div class="box1">
+                            <div class="row">
+                                <div class="col-4 col-sm-4 col-md-6 col-lg-4 mb-4 mb-lg-0">
+                                    <img class="w-75 mb-4" src="img/Azure-Repos-Logo.webp" alt="">  
+                                    <img class="w-75 mb-4" src="img/Azure-Boards-Logo.webp" alt=""> 
+                                    <img class="w-75 mb-0" src="img/Azure-Pipelines-Logo.webp" alt="">
+                                    
+                                </div>
+                                <div class="col-4 col-sm-4 col-md-6 col-lg-4  mb-4 mb-lg-0">
+                                    <img src="img/python.png" class="w-75 mt-sm-3 mb-5 mb-lg-4" alt="Python"/>
+                                    <img src="img/Pandas_logo.svg.png" class="w-100 mt-sm-3 mt-md-0 mb-5 mt-lg-0" alt="Pandas"/>
+                                    <img src="img/Git.png" class="w-75 mt-md-0 mb-4 mt-xl-3" alt="Pandas"/>
+                                </div>
+                                <div class="col-4 col-sm-4 col-md-6 mb-4 mb-lg-0 col-lg-4">
+                                    <img class="w-75 mt-lg-5 mt-sm-3 mt-md-2 mb-lg-3 mb-md-2 p-2" src="img/navex.png" alt="">
+                                    <img src="img/nist-800-53-post-icon.png" class="w-100 mt-xl-3 mb-2 mt-md-0 mb-md-2 mb-lg-2" alt="NIST SP 800-53"/>
+                                    <img src="img/sql-server.png" class="w-100 mt-lg-0 mb-4 mt-md-0 p-2" alt="SQL Server"/>
+                                </div>
+                            </div>
+                        </div> -->
+                    <!-- <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+                    </div> -->
+                    
+                    <!-- <div class="p-3 box rounded border border-success text-light">
+                        <ul>
+                            <li>Python</li>
+                            <li>Azure Repos</li>
+                            <li>Azure Boards</li>
+                            <li>Agile Framework</li>
+                            <li>Governance, Risk and Compliance (GRC)</li>
+                            <li>NIST SP 800-53</li>
+                            <li>Pandas</li>
+                            <li>Security Accreditation</li>
+                        </ul>
+                    </div> -->
+                    
+            </div>
+
+
+            <div class="row g-4 mt-4">
+                <div class="col-md-12">
+                    <div class="p-3 box rounded border border-success text-light">
+                        <div class="row mb-3">
+                            <div class="col-md-8 text-start">
+                                <h3 class="mb-1 bold">Research Assistant</h3>
+                                <h4 class="mb-1">Cal Poly Pomona</h4>
+                            </div>
+                            <div class="col-md-4 text-md-end text-start">
+                                <h5 class="mb-1">March 2022 -- May 2023</h5>
+                                <h5 class="mb-1">Pomona, CA</h5>
+                            </div>
+                        </div>
+                        <ul>
+                            <li>Engineered a secure Cryptography API with X3DH protocol, 
+                                leveraging NIST curves and SHA hash functions for IoT 
+                                communication efficiency.
+                            </li>
+                            <li>
+                                Optimized cross-platform IoT device support with 
+                                multi-architecture Docker builds and Bash script automation.
+                            </li>
+                            <li>
+                                Improved IoT system scalability and performance testing in a 
+                                K3s cluster, integrating lightweight cryptography like AES and 
+                                Ascon.
+                            </li>
+                            <li>
+                                Directed a team in developing the X3DH protocol using Ed25519 
+                                curves, enhancing IoT device security.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- <div class="col-md-4">
+                    <div class="box1">
+                        <div class="row">
+                            <div class="col-4 col-sm-4 col-md-6 col-lg-4 mb-4 mb-lg-0">
+                                <img class="w-100 mb-4" src="img/k.webp" alt="">  
+                                <img class="w-75 mb-4" src="img/ubuntu.png" alt=""> 
+                                 <img class="w-75 mb-0" src="img/Git.png" alt="">
+                                
+                            </div>
+                            <div class="col-4 col-sm-4 col-md-6 col-lg-4  mb-4 mb-lg-0">
+                                <img class="w-100 mb-4" src="img/docker.png" alt=""> 
+                                <img class="w-100 mt-3" src="img/Git.png" alt="">
+                            </div>
+                            <div class="col-4 col-sm-4 col-md-6 mb-4 mb-lg-0 col-lg-4">
+                                <img class="w-75 mb-4" src="img/c.png" alt="">
+                                <img src="img/raspbian.webp" class="w-100 mt-md-0 mb-4" alt="Pandas"/>
+                            </div>
+                        </div>
+                    </div>-->
+                </div> 
+            </div>
+
+
+            
+        </div>
+    </section>
+
+    <section class="p-5" id="skills">
+        <div class="container">
+            <h2 class="text-center mb-4">Skills</h2>
+            <table class="table table-light table-striped align-middle">
+                <thead>
+                    <tr>
+                        <th>Languages</th>
+                        <th>Frameworks</th>
+                        <th>Software</th>
+                        <th>Other Skills</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Python</th>
+                        <th>Flask</th>
+                        <th>Docker</th>
+                        <th>Cryptography</th>
+                    </tr>
+                    <tr>
+                        <th>GoLang</th>
+                        <th>Tensorflow</th>
+                        <th>Kubernetes</th>
+                        <th>Deep Learning</th>
+                    </tr>
+                    <tr>
+                        <th>C</th>
+                        <th>Pandas</th>
+                        <th>Postman</th>
+                        <th>Machine Learning</th>
+                    </tr>
+                    <tr>
+                        <th>SQL</th>
+                        <th>Scikit-learn</th>
+                        <th>SQL Server</th>
+                        <th>Cloud Computing</th>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- boxes -->
+    <section id="certifications" class="p-5 bg-dark text-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Certifications</h2>
+            <!-- gap of 4 -->
+            <div class="row text-center g-4">
+                <div class="col-md">
+                    <!-- h-100 gives all cards the same height -->
+                    <div class="card h-100 bg-light text-dark">
+                        <div class="card-body text-center">
+                            <!-- In Bootstrap can use h1,h2,.. as a class -->
+                            <div class="h1 mb-3">
+                                <img class="card-img-top w-50" src="img/aws.png" alt="">                               
+                            </div>
+                            <h3 class="card-title mb-3">
+                                AWS Certified Solutions Architect - Associate
+                            </h3>
+                            <p class="card-text text-start">
+                                Earners of this certification have a comprehensive understanding of AWS services and technologies. 
+                                They demonstrated the ability to build secure and robust solutions using architectural design principles based on 
+                                customer requirements. Badge owners are able to strategically design well-architected distributed systems that are 
+                                scalable, resilient, efficient, and fault-tolerant.
+                            </p>
+                            <!-- noopener noreferrer preevents tabnabbing that allows for phishing attacks -->
+                            <a href="https://www.credly.com/badges/bedaa20a-032b-463a-b3a2-4266b8578aee/linked_in_profile" class="btn btn-primary" 
+                            target="_blank" rel="noopener noreferrer">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md">
+                    <div class="card h-100 bg-secondary text-light">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3">
+                                <img src="img/azure.png" alt="" class="card-img-top w-50">
+                            </div>
+                            <h3 class="card-title mb-3">
+                                Microsoft Certified Azure Fundamentals (AZ-900)
+                            </h3>
+                            <p class="card-text text-start">
+                                Earners of the Azure Fundamentals certification have demonstrated foundational level knowledge of cloud services and how those services are 
+                                provided with Microsoft Azure. They can describe cloud computing concepts (public, private and hybrid) , Azure architectural components and Azure services, such as compute, networking, and storage, 
+                                as well as features and tools to secure, govern, and administer Azure. 
+                            </p>
+                            <a href="https://www.credly.com/badges/b834e559-afd6-4db7-9370-567d06507b5d/linked_in_profile" class="btn btn-primary"
+                            target="_blank" rel="noopener noreferrer">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card h-100 bg-danger text-light">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3">
+                                <img src="img/securityplus.png" alt="" class="card-img-top w-50 rounded-circle">
+                            </div>
+                            <h3 class="card-title mb-3">
+                                CompTIA Security+ ce Certification
+                            </h3>
+                            <p class="card-text text-start">
+                                Earners of the CompTIA Security+ certification have the knowledge and skills necessary to perform core security functions required of any 
+                                cybersecurity role. CompTIA Security+ professionals know how to identify and address potential threats, attacks and vulnerabilities and 
+                                they have established techniques in risk management, risk mitigation, threat management and intrusion detection.
+                            </p>
+                            <a href="https://www.credly.com/badges/efac7d81-adc8-448d-97be-470afca86ef4/public_url" class="btn btn-primary"
+                            target="_blank" rel="noopener noreferrer">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Learn Sections -->
+    <!-- <section id="learn" class="p-5">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md">
+                    <img src="img/fundamentals.svg" class="img-fluid" alt=""/>
+                </div>
+                <div class="col-md p-5">
+                    <h2>Learn the Fundamentals</h2>
+                    <p class="lead">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam illo eligendi harum est, omnis modi, corporis reprehenderit amet possimus similique 
+                        dolores ut ad maiores enim at ipsum necessitatibus. Labore, quod!
+                        
+                    </p>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam non veritatis eveniet vero, enim possimus quam sunt laboriosam tenetur repellendus 
+                        atque, facere sed voluptate expedita, commodi aperiam quo dolorem? Laborum? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil consectetur, 
+                        est autem ipsam fugiat corporis facere nam deserunt vitae. Eos voluptatibus neque distinctio adipisci molestias quod illo delectus, commodi optio.
+                    </p>
+                </div>
+            </div>
+        </div> -->
+    <!-- </section> -->
+
+    <!-- Section 2 -->
+    <!-- <section id="learn" class="p-5 bg-dark text-light">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md p-5">
+                    <h2>Learn the Fundamentals</h2>
+                    <p class="lead">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam illo eligendi harum est, omnis modi, corporis reprehenderit amet possimus similique 
+                        dolores ut ad maiores enim at ipsum necessitatibus. Labore, quod!
+                    </p>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam non veritatis eveniet vero, enim possimus quam sunt laboriosam tenetur repellendus 
+                        atque, facere sed voluptate expedita, commodi aperiam quo dolorem? Laborum? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil consectetur, 
+                        est autem ipsam fugiat corporis facere nam deserunt vitae. Eos voluptatibus neque distinctio adipisci molestias quod illo delectus, commodi optio.
+                    </p>
+                </div>
+                <div class="col-md">
+                    <img src="img/react.svg" class="img-fluid" alt=""/>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Question Accordion -->
+    <section id="projects" class="p-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Projects</h2>
+            <div class="accordion accordion-flush" id="Projects">
+                <!-- Project 1 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#project-1" aria-expanded="false" aria-controls="project-1">
+                      Breast Cancer Detection
+                    </button>
+                  </h2>
+                  <div id="project-1" class="accordion-collapse collapse" data-bs-parent="#Projects">
+                    <div class="accordion-body">
+                        <ul>Developed an algorithm to preprocess data using image processing and image segmentation for Breast Cancer Detection.</ul>
+                        <ul>Achieved an F1 score of 0.69 and a Recall of 0.78 using the pre-trained Deep Learning model VGG-16.</ul>
+                        <ul>Presented in the Undergraduate Research Scholar Conference amongst 150 other students and published in Texas A&M digital respository.</ul>
+                    </div>
+                  </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#project-2" aria-expanded="false" aria-controls="project-2">
+                      Novel Anomaly Detection for Building Automation Data
+                    </button>
+                  </h2>
+                  <div id="project-2" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <ul>Preprocessed and visualized data using python libraries Pandas, NumPy, Matplotlib, Seaborn, and SciKit-Learn to
+                            develop clustering models that finds patterns in detecting anomalies in Building Management Systems.</ul>
+                        <ul>Developed a GUI that detects intruders using our intrusion detection algorithm.</ul>
+                        <ul>Predicted intruders with an accuracy of 95% using our Machine Learning models.</ul>
+                    </div>
+                  </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#project-3" aria-expanded="false" aria-controls="project-3">
+                      Screen sharing Web Application
+                    </button>
+                  </h2>
+                  <div id="project-3" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <ul>Developed a user-friendly application using Flask and SQLite for users to share their screens to various devices such
+                            as TVs and Projectors.</ul>
+                        <ul>Containerized the application using Docker to run on a Cisco IOS XE Switch.</ul>
+                        <ul>Stored and displayed users previous screen shared inputs using SQLite and Flask</ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </section>
+
+    <!-- Instructors -->
+    <!-- <section class="p-5 bg-primary" id="instructors">
+        <div class="container">
+            <h2 class="text-center text-white">Our Instructors</h2>
+            <p class="lead text-center text-white mb-5">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi commodi cum sapiente pariatur harum quisquam quos iure incidunt, minima odit nisi quaerat 
+                laborum molestias alias, sit aperiam necessitatibus! Non, dolore.
+            </p>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <img src="https://randomuser.me/api/portraits/men/12.jpg" alt="" class="rounded-circle mb-3">
+                            <h3 class="card-title mb-3">Jack Sparrow</h3>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis illo porro obcaecati nulla tempora, nesciunt perferendis doloremque 
+                                repellendus quos repudiandae voluptatem neque adipisci expedita voluptate excepturi saepe unde animi modi.</p>
+                            <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <img src="https://randomuser.me/api/portraits/men/9.jpg" alt="" class="rounded-circle mb-3">
+                            <h3 class="card-title mb-3">Jack Sparrow</h3>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis illo porro obcaecati nulla tempora, nesciunt perferendis doloremque 
+                                repellendus quos repudiandae voluptatem neque adipisci expedita voluptate excepturi saepe unde animi modi.</p>
+                            <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <img src="https://randomuser.me/api/portraits/men/16.jpg" alt="" class="rounded-circle mb-3">
+                            <h3 class="card-title mb-3">Jack Sparrow</h3>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis illo porro obcaecati nulla tempora, nesciunt perferendis doloremque 
+                                repellendus quos repudiandae voluptatem neque adipisci expedita voluptate excepturi saepe unde animi modi.</p>
+                            <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <img src="https://randomuser.me/api/portraits/men/19.jpg" alt="" class="rounded-circle mb-3">
+                            <h3 class="card-title mb-3">Jack Sparrow</h3>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis illo porro obcaecati nulla tempora, nesciunt perferendis doloremque 
+                                repellendus quos repudiandae voluptatem neque adipisci expedita voluptate excepturi saepe unde animi modi.</p>
+                            <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
